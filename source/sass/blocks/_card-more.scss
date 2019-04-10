@@ -1,0 +1,43 @@
+.card-more__block-image {
+  margin-top: 26px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-more__image {
+  display: block;
+  opacity: 0.2;
+}
+
+.card-more__slogan-more {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $regular;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-more__more-description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card-more__button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $darkgray;
+}

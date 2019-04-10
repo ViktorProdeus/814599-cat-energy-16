@@ -1,0 +1,14 @@
+.site-list__item {
+  text-transform: uppercase;
+}
+
+.site-list__item-link {
+  padding: 23px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $medium;
+  color: $black;
+}
