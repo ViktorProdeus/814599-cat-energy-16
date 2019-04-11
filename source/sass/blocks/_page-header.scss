@@ -5,8 +5,11 @@
 .page-header__top-line {
   padding: 11px 20px 16px;
   border-bottom: 1px solid #e6e6e6;
-  display: flex;
-  justify-content: space-between;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-header__toggle {
