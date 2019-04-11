@@ -1,0 +1,28 @@
+.card__block-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image {
+  display: block;
+}
+
+.card__table-price {
+  width: 50%;
+}
+
+.card__table-price td {
+  font-size: 12px;
+  line-height: 16px;
+  color: $darkgray;
+}
+
+.card__button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}

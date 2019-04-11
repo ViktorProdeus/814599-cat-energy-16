@@ -1,0 +1,29 @@
+// default blocks
+@import "default/fonts";
+@import "default/variables";
+@import "default/base";
+
+// autonomic blocks
+@import "blocks/_container";
+@import "blocks/_button";
+@import "blocks/_site-list";
+@import "blocks/_diet-list";
+@import "blocks/_logo";
+@import "blocks/_card";
+@import "blocks/_card-more";
+@import "blocks/_table-price";
+@import "blocks/_social-buttons";
+@import "blocks/_copyright";
+
+// main blocks
+@import "blocks/_page-header";
+@import "blocks/_page-main";
+@import "blocks/_page-inner";
+@import "blocks/_page-footer";
+
+// others blocks
+@import "blocks/_main-nav";
+@import "blocks/_food-programm";
+@import "blocks/_options";
+@import "blocks/_advantages";
+@import "blocks/_catalog";

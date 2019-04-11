@@ -1,0 +1,54 @@
+.food-programm {
+  min-width: $mobile;
+  text-align: center;
+  color: $white;
+  margin-bottom: 22px;
+}
+
+.food-programm__bg-element {
+  min-height: 305px;
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.food-programm__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding-top: 28px;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $regular;
+  font-weight: normal;
+}
+
+.food-programm__slogan {
+  display: block;
+  margin: 0;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $regular;
+  font-weight: normal;
+}
+
+.food-programm__block-image {
+  position: relative;
+
+  .food-programm__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.food-programm__button {
+  display: block;
+  margin-top: 135px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px;
+}

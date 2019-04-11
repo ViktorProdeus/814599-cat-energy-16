@@ -1,0 +1,23 @@
+.page-header {
+  min-width: 320px;
+}
+
+.page-header__top-line {
+  padding: 11px 20px 16px;
+  border-bottom: 1px solid #e6e6e6;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__toggle {
+  min-width: 24px;
+  min-height: 18px;
+  align-self: center;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  border: none;
+}
