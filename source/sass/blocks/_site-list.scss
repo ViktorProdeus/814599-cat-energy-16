@@ -1,5 +1,8 @@
 .site-list__item {
+  padding: 23px 0;
+  text-align: center;
   text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .site-list__item-link {
@@ -11,4 +14,22 @@
   line-height: 20px;
   font-family: $medium;
   color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__item--active a {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
