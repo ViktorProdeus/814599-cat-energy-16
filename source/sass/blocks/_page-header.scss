@@ -3,6 +3,7 @@
 }
 
 .page-header__top-line {
+  margin: 0 auto;
   padding: 11px 20px 16px;
   border-bottom: 1px solid #e6e6e6;
 
@@ -17,7 +18,17 @@
   min-height: 18px;
   align-self: center;
   background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
+
+  &--open {
+    display: block;
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--closed {
+    display: block;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
 }
