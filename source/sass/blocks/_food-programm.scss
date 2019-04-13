@@ -27,7 +27,7 @@
 .food-programm__slogan {
   display: block;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -35,19 +35,13 @@
   font-weight: normal;
 }
 
-.food-programm__block-image {
-  position: relative;
-
-  .food-programm__image {
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+.food-programm__image {
+  margin-top: -163px;
 }
 
 .food-programm__button {
   display: block;
-  margin-top: 135px;
+  margin-top: 3px;
   font-size: 14px;
   line-height: 18px;
   padding: 11px;
