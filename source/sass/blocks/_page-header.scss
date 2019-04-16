@@ -32,3 +32,33 @@
     background-image: url("../img/icon-mobile-menu.svg");
   }
 }
+
+@media (min-width: $tablet) {
+  .page-header {
+    padding-top: 24px;
+
+    .container {
+      width: auto;
+    }
+  }
+
+  .page-header__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__top-line {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

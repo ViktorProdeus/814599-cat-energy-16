@@ -2,6 +2,7 @@
 @import "default/fonts";
 @import "default/variables";
 @import "default/base";
+@import "default/mixins";
 
 // autonomic blocks
 @import "blocks/_container";
@@ -12,7 +13,7 @@
 @import "blocks/_card";
 @import "blocks/_card-more";
 @import "blocks/_table-price";
-@import "blocks/_social-buttons";
+@import "blocks/_social";
 @import "blocks/_copyright";
 
 // main blocks

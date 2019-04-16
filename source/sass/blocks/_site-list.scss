@@ -21,3 +21,17 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .site-list__item {
+    border-bottom: none;
+  }
+
+  .site-list__item a {
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $regular;
+    color: #222222;
+  }
+}

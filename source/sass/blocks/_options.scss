@@ -4,7 +4,15 @@
 }
 
 .options__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+}
+
+@media (min-width: $tablet) {
+  .options {
+    margin-bottom: 54px;
+
+    .container {
+      width: 708px;
+    }
+  }
 }

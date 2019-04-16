@@ -1,3 +1,9 @@
 .page-main {
   min-width: $mobile;
 }
+
+@media (min-width: $tablet) {
+  .page-main {
+    margin-top: 62px;
+  }
+}

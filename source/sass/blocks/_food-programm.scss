@@ -46,3 +46,59 @@
   line-height: 18px;
   padding: 11px;
 }
+
+@media (min-width: $tablet) {
+  .food-programm {
+    text-align: left;
+    color: $black;
+    margin-bottom: 0;
+
+    .container {
+      position: relative;
+      width: 708px;
+    }
+  }
+
+  .food-programm__bg-element {
+    min-height: auto;
+    background: none;
+  }
+
+  .food-programm__title {
+    margin: 0;
+    margin-bottom: 42px;
+    padding-top: 0;
+    padding-left: 90px;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: $regular;
+    font-weight: normal;
+  }
+
+  .food-programm__slogan {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .food-programm__image {
+    margin-top: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  .food-programm__button {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    display: inline-block;
+    min-width: 245px;
+    margin: 0;
+    margin-left: 90px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+}

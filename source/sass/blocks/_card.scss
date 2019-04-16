@@ -10,6 +10,7 @@
 }
 
 .card__table-price {
+  margin-top: 22px;
   width: 50%;
 }
 
@@ -21,8 +22,51 @@
 
 .card__button {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+}
+
+@media(min-width: $tablet) {
+  .card {
+    background-color: #f2f2f2;
+  }
+
+  .card__image {
+    margin-bottom: 39px;
+
+    &--small {
+      margin-top: -46px;
+      width: 324px;
+      height: 174px;
+    }
+
+    &--big {
+      margin-top: -82px;
+      width: 324px;
+      height: 208px;
+    }
+  }
+
+  .card__table-price {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .card__table-price tr {
+    border-bottom: 1px solid #cdcdcd;
+    height: 31px;
+  }
+
+  .card__table-price td {
+    font-size: 16px;
+    line-height: 16px;
+    color: $darkgray;
+  }
+
+  .card__button {
+    margin-top: 33px;
+    width: 249px;
+  }
 }

@@ -1,7 +1,5 @@
 .diet-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .diet-list__item {
@@ -43,4 +41,32 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+}
+
+@media (min-width: $tablet) {
+  .diet-list__item {
+    padding: 80px 52px 62px;
+    margin-bottom: 30px;
+  }
+
+  .diet-list__title {
+    margin-bottom: 17px;
+    font-size: 36px;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  .diet-list__description {
+    width: 372px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 58px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .diet-list__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

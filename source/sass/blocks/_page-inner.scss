@@ -13,3 +13,24 @@
   color: $black;
   font-weight: normal;
 }
+
+@media (min-width: $tablet) {
+  .page-inner {
+
+    .container {
+      width: 708px;
+    }
+  }
+
+  .page-inner__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 66px;
+    margin-bottom: 156px;
+    font-family: $regular;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    font-weight: normal;
+  }
+}
