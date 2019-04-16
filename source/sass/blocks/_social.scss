@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @include list-reset;
   margin: 0 auto;
   width: 125px;
@@ -18,6 +19,7 @@
   color: $darkgray;
   text-decoration: none;
 }
+
 .social__link svg {
   fill: $darkgray;
 }
@@ -26,24 +28,28 @@
   width: 22px;
   height: 12px;
 }
+
 .social__link--insta svg {
   width: 16px;
   height: 16px;
 }
+
 .social__link--fb svg {
   width: 10px;
   height: 19px;
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .social__link--vk svg {
     width: 30px;
     height: 16px;
   }
+
   .social__link--insta svg {
     width: 23px;
     height: 23px;
   }
+
   .social__link--fb svg {
     width: 14px;
     height: 28px;

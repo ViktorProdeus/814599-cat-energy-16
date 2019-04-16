@@ -30,6 +30,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 .card--more__slogan-more br {
   display: none;
 }
@@ -55,7 +56,7 @@
   color: $darkgray;
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .card--more {
     background-color: $default-bg;
     border: 1px solid #cdcdcd;
