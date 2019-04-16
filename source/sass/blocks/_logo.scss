@@ -19,3 +19,10 @@
     height: 58px;
   }
 }
+
+@media (min-width: $desktop) {
+  .logo__icon {
+    width: 202px;
+    height: 59px;
+  }
+}

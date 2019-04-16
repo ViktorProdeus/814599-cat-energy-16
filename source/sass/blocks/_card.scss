@@ -33,18 +33,18 @@
     background-color: #f2f2f2;
   }
 
-  .card__image {
+  .card__block-image {
     margin-bottom: 39px;
+    width: 324px;
+    align-items: flex-end;
 
     &--small {
-      margin-top: -46px;
-      width: 324px;
+      margin-top: -47px;
       height: 174px;
     }
 
     &--big {
-      margin-top: -82px;
-      width: 324px;
+      margin-top: -81px;
       height: 208px;
     }
   }
@@ -56,7 +56,7 @@
 
   .card__table-price tr {
     border-bottom: 1px solid #cdcdcd;
-    height: 31px;
+    height: 30px;
   }
 
   .card__table-price td {

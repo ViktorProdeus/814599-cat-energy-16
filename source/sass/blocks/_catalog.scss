@@ -24,9 +24,10 @@
   .catalog__item {
     width: 324px;
     margin-right: 60px;
-    min-height: 431px;
-    border-top: none;
     margin-bottom: 140px;
+    padding-bottom: 40px;
+    border-top: none;
+
 
     &:nth-child(2n) {
       margin-right: 0;

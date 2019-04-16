@@ -10,6 +10,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-width: 439px;
+    width: 439px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 478px;
   }
 }

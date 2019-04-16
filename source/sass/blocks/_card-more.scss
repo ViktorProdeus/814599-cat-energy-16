@@ -8,16 +8,22 @@
   }
 }
 
+.card--more__block-image {
+  width: 324px;
+  height: 114px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .card--more__image {
-  margin-top: 26px;
-  margin-bottom: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  width: 60px;
+  height: 60px;
   opacity: 0.2;
 }
 
-.card--more__slogan-more {
+.card--more__slogan {
   display: block;
   margin: 0;
   margin-bottom: 10px;
@@ -31,11 +37,11 @@
   line-height: 20px;
 }
 
-.card--more__slogan-more br {
+.card--more__slogan br {
   display: none;
 }
 
-.card--more__more-description {
+.card--more__description {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -44,7 +50,7 @@
   line-height: 16px;
 }
 
-.card--more__more-description br {
+.card--more__description br {
   display: none;
 }
 
@@ -62,29 +68,18 @@
     border: 1px solid #cdcdcd;
   }
 
-  .card--more__image {
-    margin-top: 55px;
-    margin-bottom: 51px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 60px;
-    height: 60px;
-    opacity: 0.2;
-  }
-
-  .card--more__slogan-more {
-    margin-bottom: 28px;
+  .card--more__slogan {
+    margin-bottom: 29px;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .card--more__slogan-more br {
+  .card--more__slogan br {
     display: block;
   }
 
-  .card--more__more-description {
+  .card--more__description {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -92,12 +87,15 @@
     line-height: 20px;
   }
 
-  .card--more__more-description br {
+  .card--more__description br {
     display: block;
   }
 
   .card--more__button {
-    margin-top: 80px;
+    margin-top: 76px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
     width: 249px;
   }
 }
