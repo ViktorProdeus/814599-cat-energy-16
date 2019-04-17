@@ -34,8 +34,9 @@
   }
 
   .card__block-image {
+    margin: 0 auto;
     margin-bottom: 39px;
-    width: 324px;
+    width: 100%;
     align-items: flex-end;
 
     &--small {
@@ -67,6 +68,6 @@
 
   .card__button {
     margin-top: 33px;
-    width: 249px;
+    width: 77%;
   }
 }
