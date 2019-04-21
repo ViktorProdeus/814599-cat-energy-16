@@ -4,3 +4,7 @@
 
   list-style: none;
 }
+
+@mixin margin-center {
+  margin: 0 auto;
+}

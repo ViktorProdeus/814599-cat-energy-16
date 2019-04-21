@@ -57,7 +57,6 @@
 
     .container {
       position: relative;
-      width: 708px;
     }
   }
 
@@ -68,7 +67,7 @@
 
   .food-programm__title {
     margin: 0;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     padding-top: 0;
     padding-left: 90px;
     font-size: 60px;
@@ -78,7 +77,7 @@
   }
 
   .food-programm__slogan {
-    margin-left: 90px;
+    padding-left: 90px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
@@ -98,6 +97,76 @@
     min-width: 245px;
     margin: 0;
     margin-left: 90px;
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop) {
+  .food-programm {
+    text-align: left;
+    color: $black;
+    margin-bottom: 80px;
+    min-height: 583px;
+    width: 1220px;
+    position: relative;
+
+    @include margin-center;
+    display: flex;
+
+    .container {
+      width: auto;
+      position: static;
+      flex-shrink: 0;
+      margin: 0;
+    }
+  }
+
+  .food-programm__title {
+    margin: 0;
+    margin-top: 113px;
+    margin-bottom: 45px;
+    padding-top: 0;
+    padding-left: 83px;
+    font-size: 60px;
+    line-height: 60px;
+    font-family: $regular;
+    font-weight: normal;
+  }
+
+  .food-programm__bg-element {
+    display: flex;
+
+    .container + .container {
+      position: relative;
+    }
+  }
+
+  .food-programm__slogan {
+    padding-left: 80px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .food-programm__image {
+    margin-top: 29px;
+    margin-left: -43px;
+    width: 552px;
+    height: 499px;
+  }
+
+  .food-programm__button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    min-width: 245px;
+    margin: 0;
+    margin-left: 80px;
+    margin-top: 343px;
     padding: 16px;
     font-size: 20px;
     line-height: 20px;

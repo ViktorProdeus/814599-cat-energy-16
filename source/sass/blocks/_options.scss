@@ -16,3 +16,19 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .options {
+    margin-bottom: 70px;
+
+    .container {
+      width: 1220px;
+    }
+  }
+
+  .options__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -10,7 +10,6 @@
   .container {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
   }
 }
 
@@ -44,7 +43,9 @@
   }
 
   .page-header__wrapper {
-    margin: 0 30px;
+    width: 708px;
+
+    @include margin-center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,28 +71,36 @@
 @media (min-width: $desktop) {
   .page-header {
     padding-top: 54px;
+  }
 
-    .container {
-      width: auto;
+  .page-header--background {
+    position: relative;
+
+    .site-list__link {
+      color: #ffffff;
     }
   }
 
+  .page-header--background::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    min-height: 696px;
+    right: 0;
+    top: 0;
+    background-color: $green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .page-header__wrapper {
-    margin: 0 40px;
+    width: 1220px;
+
+    @include margin-center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .page-header__top-line {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    border-bottom: none;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 }

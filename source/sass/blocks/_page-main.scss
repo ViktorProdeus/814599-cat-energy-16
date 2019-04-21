@@ -4,6 +4,12 @@
 
 @media (min-width: $tablet) {
   .page-main {
-    margin-top: 62px;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main {
+    margin-top: 0;
   }
 }
