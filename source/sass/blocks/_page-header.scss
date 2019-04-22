@@ -36,7 +36,7 @@
 
 @media (min-width: $tablet) {
   .page-header {
-    width: $tablet;
+    width: auto;
     padding-top: 24px;
 
     .container {
@@ -72,7 +72,6 @@
 
 @media (min-width: $desktop) {
   .page-header {
-    width: $desktop;
     padding-top: 54px;
   }
 

@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet) {
   .page-footer {
-    width: $tablet;
+    width: auto;
 
     .container {
       display: flex;
@@ -50,11 +50,5 @@
   .page-footer__social {
     border-top: none;
     border-bottom: none;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-footer {
-    width: $desktop;
   }
 }
