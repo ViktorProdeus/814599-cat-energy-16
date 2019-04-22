@@ -9,9 +9,33 @@
   display: block;
 }
 
-.card__table-price {
-  margin-top: 22px;
+.card__price-content {
   width: 50%;
+  box-sizing: border-box;
+}
+
+.card__price-content a {
+  text-decoration: none;
+}
+
+.card__price-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-family: $regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.card__table-price {
+  margin: 0 auto;
+  margin-top: 22px;
+  width: 100%;
 }
 
 .card__table-price td {
@@ -48,6 +72,28 @@
       margin-top: -81px;
       height: 208px;
     }
+  }
+
+  .card__price-content {
+    width: 77%;
+    box-sizing: border-box;
+  }
+
+  .card__price-title {
+    width: 126px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__price-title br {
+    display: none;
   }
 
   .card__table-price {

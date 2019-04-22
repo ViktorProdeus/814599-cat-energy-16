@@ -32,14 +32,14 @@
     width: 324px;
     margin-bottom: 140px;
     padding-bottom: 40px;
-    border-top: none;
+    border: none;
 
     &:nth-last-child(-n+2) {
       margin-bottom: 0;
     }
 
     &.card-more {
-      border-top: 1px solid #cdcdcd;
+      border: 1px solid #cdcdcd;
     }
 
     .container {

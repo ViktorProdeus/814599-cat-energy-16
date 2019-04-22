@@ -1,16 +1,6 @@
 .table-price {
   border-collapse: collapse;
-}
-
-.table-price__title {
-  margin-bottom: 15px;
-  font-family: $regular;
-  font-size: 16px;
-  line-height: 20px;
-  color: $black;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: left;
+  width: 100%;
 }
 
 .table-price__value {
@@ -18,24 +8,7 @@
 }
 
 @media (min-width: $tablet) {
-  .table-price__title {
-    width: 126px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: $regular;
-    font-size: 20px;
-    line-height: 20px;
-    color: $black;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  .table-price__title br {
-    display: none;
-  }
-
-  .table-price {
-    width: 77%;
-  }
+  // .table-price {
+  //   width: 77%;
+  // }
 }
