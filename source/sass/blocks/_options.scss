@@ -1,5 +1,6 @@
 .options {
-  min-width: $mobile;
+  width: $mobile;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -9,6 +10,7 @@
 
 @media (min-width: $tablet) {
   .options {
+    width: $tablet;
     margin-bottom: 54px;
 
     .container {
@@ -19,6 +21,7 @@
 
 @media (min-width: $desktop) {
   .options {
+    width: $desktop;
     margin-bottom: 70px;
 
     .container {

@@ -1,5 +1,6 @@
 .site-list__item {
-  border-bottom: 1px solid #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-top: none;
 }
 
 .site-list__link {
@@ -24,7 +25,7 @@
 
 @media (min-width: $tablet) {
   .site-list__item {
-    border-bottom: none;
+    border: none;
   }
 
   .site-list__link {
