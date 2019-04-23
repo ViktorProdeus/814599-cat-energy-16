@@ -1,9 +1,11 @@
 .page-header {
-  min-width: 320px;
+  width: $mobile;
+  margin: 0 auto;
 }
 
 .page-header__top-line {
-  padding: 11px 20px 16px;
+  margin: 0 auto;
+  padding: 11px 0 16px;
   border-bottom: 1px solid #e6e6e6;
 
   .container {
@@ -17,7 +19,90 @@
   min-height: 18px;
   align-self: center;
   background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
+
+  &--open {
+    display: block;
+    background-image: url("../img/icon-close.svg");
+  }
+
+  &--closed {
+    display: block;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    width: auto;
+    padding-top: 24px;
+
+    .container {
+      width: auto;
+    }
+  }
+
+  .page-header__wrapper {
+    width: 708px;
+
+    @include margin-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__top-line {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+
+    .container {
+      margin: 0;
+    }
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    padding-top: 54px;
+  }
+
+  .page-header--background {
+    position: relative;
+
+    .site-list__link {
+      color: #ffffff;
+    }
+  }
+
+  .page-header--background::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    min-height: 696px;
+    right: 0;
+    top: 0;
+    background-color: $green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .page-header__wrapper {
+    width: 1220px;
+
+    @include margin-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

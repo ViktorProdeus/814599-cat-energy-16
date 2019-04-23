@@ -1,12 +1,28 @@
 .logo {
-  width: 191px;
-  height: 38px;
-
   &:hover {
     opacity: 0.8;
   }
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.logo__icon {
+  width: 191px;
+  height: 38px;
+}
+
+@media (min-width: $tablet) {
+  .logo__icon {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo__icon {
+    width: 202px;
+    height: 59px;
   }
 }

@@ -11,54 +11,54 @@
 
 <body>
 
-  <header class="page-header">
-    <div class="page-header__top-line">
-      <div class="container">
-        <a href="#" class="page-header__logo logo">
-          <img class="logo__icon" src="img/logo-mobile.svg" alt="логотип">
-        </a>
+  <header class="page-header page-header--background">
+    <div class="page-header__wrapper">
+      <div class="page-header__top-line">
+        <div class="container">
+          <a href="#" class="page-header__logo logo">
+            <img class="logo__icon" src="img/logo-mobile.svg" alt="логотип">
+          </a>
 
-        <button class="page-header__toggle">
-          <span class="visually-hidden">открыть меню</span>
-        </button>
+          <button class="page-header__toggle page-header__toggle--open">
+            <span class="visually-hidden">кнопка открыть(закрыть) меню</span>
+          </button>
+        </div>
       </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__item-link">Главная</a>
-        </li>
-
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
-        </li>
-
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница сайта "Кэт энерджи"</h1>
 
     <section class="food-programm">
+
       <div class="food-programm__bg-element">
         <div class="container">
-          <h2 class="food-programm__title">Функциональное питание для котов</h2>
+          <h2 class="food-programm__title">Функциональное<br> питание для котов</h2>
 
           <b class="food-programm__slogan">Занялся собой? Займись котом!</b>
-
-          <div class="food-programm__block-image">
-            <img class="food-programm__image food-programm__image--cup" src="img/index-can-mobile@1x.png"
-              alt="кружка cat-energy">
-          </div>
         </div>
       </div>
-
       <div class="container">
+        <img class="food-programm__image food-programm__image--cup" src="img/index-can-desktop@1x.png"
+          alt="кружка cat-energy">
+
         <a class="food-programm__button button button--green" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -141,10 +141,10 @@
         <img class="logo__name" src="img/logo-footer.svg" alt="логотип">
       </a>
 
-      <div class="page-footer__social">
-        <ul class="page-footer__list social-buttons">
-          <li class="social-buttons__button">
-            <a class="social-buttons__button-vk" href="#">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
@@ -172,20 +172,14 @@
             </a>
           </li>
 
-          <li class="social-buttons__button">
-            <a class="social-buttons__button-insta" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="#">
               <span class="visually-hidden">Инстаграмм</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16"
                 style="enable-background:new 0 0 16 16;" xml:space="preserve" width="16" height="16">
-                <style type="text/css">
-                  .st0 {
-                    fill: #231F20;
-                  }
-
-                </style>
                 <path class="st0"
                   d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1
   L11.8,1 M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0L11.8,0z" />
@@ -197,8 +191,8 @@
             </a>
           </li>
 
-          <li class="social-buttons__button">
-            <a class="social-buttons__button-fb" href="#">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
@@ -218,13 +212,13 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
         </a>
 
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
-            <path fill="#444444"
+            <path
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
           </svg>
         </a>

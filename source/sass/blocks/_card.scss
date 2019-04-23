@@ -9,8 +9,33 @@
   display: block;
 }
 
-.card__table-price {
+.card__price-content {
   width: 50%;
+  box-sizing: border-box;
+}
+
+.card__price-content a {
+  text-decoration: none;
+}
+
+.card__price-title {
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  font-family: $regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.card__table-price {
+  margin: 0 auto;
+  margin-top: 22px;
+  width: 100%;
 }
 
 .card__table-price td {
@@ -21,8 +46,74 @@
 
 .card__button {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+}
+
+@media (min-width: $tablet) {
+  .card {
+    background-color: #f2f2f2;
+  }
+
+  .card__block-image {
+    margin: 0 auto;
+    margin-bottom: 39px;
+    width: 100%;
+    align-items: flex-end;
+
+    &--small {
+      margin-top: -47px;
+      height: 174px;
+    }
+
+    &--big {
+      margin-top: -81px;
+      height: 208px;
+    }
+  }
+
+  .card__price-content {
+    width: 77%;
+    box-sizing: border-box;
+  }
+
+  .card__price-title {
+    width: 126px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .card__price-title br {
+    display: none;
+  }
+
+  .card__table-price {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .card__table-price tr {
+    border-bottom: 1px solid #cdcdcd;
+    height: 30px;
+  }
+
+  .card__table-price td {
+    font-size: 16px;
+    line-height: 16px;
+    color: $darkgray;
+  }
+
+  .card__button {
+    margin-top: 33px;
+    width: 77%;
+  }
 }

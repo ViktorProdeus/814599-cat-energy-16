@@ -1,7 +1,24 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
+  @include list-reset;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 439px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 478px;
+  }
 }

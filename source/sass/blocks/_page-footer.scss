@@ -1,5 +1,6 @@
 .page-footer {
   min-width: $mobile;
+  margin: 0 auto;
   font-family: $default-font;
   font-size: 16px;
   line-height: 16px;
@@ -24,22 +25,30 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.page-footer__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  width: 125px;
-}
-
-.page-footer__link {
-  font-family: $default-font;
-  font-size: 16px;
-  line-height: 16px;
-  color: $darkgray;
-  text-decoration: none;
-  align-self: center;
-}
-
 .page-footer__copyright {
   min-height: 62px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    width: auto;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 128px;
+    height: 24px;
+    padding: 64px 0 62px;
+    margin: 0;
+  }
+
+  .page-footer__social {
+    border-top: none;
+    border-bottom: none;
+  }
 }

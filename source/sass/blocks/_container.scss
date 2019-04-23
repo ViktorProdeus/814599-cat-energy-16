@@ -1,4 +1,21 @@
 .container {
   width: 280px;
-  margin: 0 auto;
+
+  @include margin-center;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    width: 708px;
+
+    @include margin-center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 1220px;
+
+    @include margin-center;
+  }
 }

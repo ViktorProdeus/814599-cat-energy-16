@@ -1,10 +1,37 @@
 .options {
-  min-width: $mobile;
+  width: $mobile;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .options__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-reset;
+}
+
+@media (min-width: $tablet) {
+  .options {
+    width: $tablet;
+    margin-bottom: 54px;
+
+    .container {
+      width: 708px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .options {
+    width: $desktop;
+    margin-bottom: 70px;
+
+    .container {
+      width: 1220px;
+    }
+  }
+
+  .options__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
