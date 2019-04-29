@@ -6,14 +6,17 @@
   &:last-child {
     border-bottom: 1px solid #ededed;
   }
+}
 
-  .container {
-    flex-direction: column;
-  }
+.card-more__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .card-more__block-image {
-  margin: 26px auto;
+  margin: 26px auto 19px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -32,7 +35,7 @@
 .card-more__slogan {
   display: block;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   padding: 0;
   text-transform: uppercase;
   text-align: center;
@@ -49,7 +52,7 @@
 
 .card-more__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0;
   text-align: center;
   font-size: 12px;
@@ -62,7 +65,7 @@
 
 .card-more__button {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   line-height: 20px;
   color: $darkgray;
@@ -74,7 +77,12 @@
     border: 1px solid #cdcdcd;
   }
 
+  .card-more__wrapper {
+    width: 249px;
+  }
+
   .card-more__block-image {
+    margin: 5px auto 44px;
     width: 100%;
     height: 114px;
     align-items: flex-end;
@@ -86,7 +94,7 @@
   }
 
   .card-more__slogan {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
@@ -109,10 +117,16 @@
   }
 
   .card-more__button {
-    margin-top: 74px;
+    margin-top: 82px;
     padding: 10px;
     font-size: 16px;
     line-height: 20px;
-    width: 77%;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .card-more__wrapper {
+    width: 170px;
   }
 }

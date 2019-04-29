@@ -22,6 +22,14 @@
 
 .social__link svg {
   fill: $darkgray;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--vk svg {

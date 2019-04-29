@@ -1,6 +1,7 @@
 .copyright {
+  width: auto;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
@@ -9,7 +10,19 @@
   line-height: 16px;
   color: $darkgray;
   text-decoration: none;
-  align-self: center;
+
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover svg {
+    fill: $green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -31,5 +44,12 @@
 @media (min-width: $tablet) {
   .copyright {
     min-width: 162px;
+  }
+
+  .copyright__link {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

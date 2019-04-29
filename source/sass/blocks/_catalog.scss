@@ -7,11 +7,6 @@
   border: 1px solid #ededed;
   border-bottom: none;
   padding-bottom: 24px;
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -39,14 +34,8 @@
     }
 
     &.card-more {
+      padding-bottom: 39px;
       border: 1px solid #cdcdcd;
-    }
-
-    .container {
-      width: auto;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
     }
   }
 }
@@ -63,7 +52,7 @@
 
   .catalog__item {
     width: 245px;
-    margin-bottom: 140px;
+    margin-bottom: 144px;
     padding-bottom: 40px;
     align-self: flex-start;
 

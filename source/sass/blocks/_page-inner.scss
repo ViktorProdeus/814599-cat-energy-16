@@ -1,8 +1,8 @@
 .page-inner__title {
   margin: 0;
   padding: 0;
-  margin-top: 20px;
-  margin-bottom: 23px;
+  margin-top: 14px;
+  margin-bottom: 26px;
   font-family: $regular;
   font-size: 36px;
   line-height: 60px;
@@ -14,12 +14,17 @@
   .page-inner__title {
     margin: 0;
     padding: 0;
-    margin-top: 66px;
-    margin-bottom: 156px;
+    margin-top: 55px;
+    margin-bottom: 164px;
     font-family: $regular;
     font-size: 60px;
     line-height: 60px;
     color: $black;
     font-weight: normal;
+  }
+}
+@media (min-width: $desktop) {
+  .page-inner__title {
+    margin-top: 71px;
   }
 }

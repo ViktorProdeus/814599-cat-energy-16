@@ -1,8 +1,22 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
-
   @include list-reset;
+}
+
+@media (max-width: $mobile-only) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav--open {
+    display: block;
+  }
+
+  .main-nav--no-js {
+    display: block;
+  }
+
 }
 
 @media (min-width: $tablet) {
