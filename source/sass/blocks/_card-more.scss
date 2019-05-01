@@ -11,7 +11,7 @@
 .card-more__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -94,26 +94,21 @@
   }
 
   .card-more__slogan {
+    width: 170px;
+    margin: 0 auto;
     margin-bottom: 25px;
     text-align: center;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .card-more__slogan br {
-    display: block;
-  }
-
   .card-more__description {
-    margin: 0;
+    width: 170px;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .card-more__description br {
-    display: block;
   }
 
   .card-more__button {

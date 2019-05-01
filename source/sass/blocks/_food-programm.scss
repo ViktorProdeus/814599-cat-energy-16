@@ -1,5 +1,5 @@
 .food-programm {
-  width: $mobile;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   color: $white;
@@ -54,7 +54,7 @@
 
 @media (min-width: $tablet) {
   .food-programm {
-    width: $tablet;
+    width: auto;
     text-align: left;
     color: $black;
     margin-bottom: 0;

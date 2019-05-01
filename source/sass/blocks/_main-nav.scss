@@ -1,6 +1,7 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
 }
 
@@ -16,7 +17,6 @@
   .main-nav--no-js {
     display: block;
   }
-
 }
 
 @media (min-width: $tablet) {

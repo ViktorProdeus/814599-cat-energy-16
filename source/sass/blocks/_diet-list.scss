@@ -36,7 +36,6 @@
 }
 
 .diet-list__item--slim {
-
   &::after {
     top: 22px;
     left: 30px;
@@ -48,7 +47,6 @@
 }
 
 .diet-list__item--pro {
-
   &::after {
     top: 35px;
     left: 13px;
@@ -108,7 +106,6 @@
 }
 
 .diet-list__link:hover {
-
   &::after {
     position: absolute;
     content: "";
@@ -134,27 +131,28 @@
 
     &::before {
       top: 91px;
-      left: 446px;
+      left: auto;
+      right: 61px;
       width: 200px;
       height: 200px;
     }
   }
 
   .diet-list__item--slim {
-
     &::after {
       top: 80px;
-      left: 477px;
+      left: auto;
+      right: 91px;
       width: 140px;
       height: 194px;
     }
   }
 
   .diet-list__item--pro {
-
     &::after {
       top: 134px;
-      left: 412px;
+      left: auto;
+      right: 28px;
       width: 268px;
       height: 112px;
     }
@@ -169,17 +167,18 @@
   }
 
   .diet-list__description {
-    width: 372px;
+    min-width: 344px;
     margin: 0;
     padding: 0;
+    padding-right: 260px;
     padding-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
   }
 
-  .diet-list__item--pro .diet-list__description {
-    width: 340px;
+  .diet-list__item--slim .diet-list__description {
+    min-width: 372px;
   }
 
   .diet-list__link {
@@ -201,7 +200,6 @@
   }
 
   .diet-list__link:hover {
-
     &::after {
       position: absolute;
       content: "";
@@ -234,7 +232,6 @@
   }
 
   .diet-list__item--slim {
-
     &::after {
       top: 40px;
       left: 66px;
@@ -244,7 +241,6 @@
   }
 
   .diet-list__item--pro {
-
     &::after {
       top: 68px;
       left: 35px;
