@@ -13,6 +13,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .food-programm__title {

@@ -37,6 +37,7 @@
     background-color: $green;
     background-position: 5px 5px;
     background-repeat: no-repeat;
+    background-size: 50px;
   }
 
   &:last-child {
@@ -47,6 +48,10 @@
 .advantages__item--nutritive {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
   }
 }
 
@@ -183,34 +188,6 @@
     width: 20%;
     padding-left: 0;
     margin-bottom: 0;
-  }
-
-  .advantages__item--nutritive {
-    &::after {
-      content: "1";
-      right: 14px;
-    }
-  }
-
-  .advantages__item--powder {
-    &::after {
-      content: "2";
-      right: -1px;
-    }
-  }
-
-  .advantages__item--ingestion {
-    &::after {
-      content: "3";
-      right: -2px;
-    }
-  }
-
-  .advantages__item--time {
-    &::after {
-      content: "4";
-      right: -3px;
-    }
   }
 
   .advantages__descriptions {
