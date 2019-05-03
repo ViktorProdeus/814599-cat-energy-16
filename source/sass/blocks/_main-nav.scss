@@ -5,7 +5,25 @@
   @include list-reset;
 }
 
+@media (max-width: $mobile-only) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav--open {
+    display: block;
+  }
+
+  .main-nav--no-js {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__list {
     display: flex;
     flex-direction: row;

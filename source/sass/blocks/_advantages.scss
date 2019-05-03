@@ -1,5 +1,5 @@
 .advantages {
-  width: $mobile;
+  width: auto;
   margin: 0 auto;
   padding-bottom: 45px;
 }
@@ -7,7 +7,7 @@
 .advantages__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   font-family: $regular;
   color: $black;
   font-weight: normal;
@@ -21,15 +21,60 @@
 }
 
 .advantages__item {
+  display: flex;
+  min-height: 60px;
+  position: relative;
   padding-left: 80px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.advantages__item--nutritive {
+  &::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+}
+
+.advantages__item--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+}
+
+.advantages__item--ingestion {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+}
+
+.advantages__item--time {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
 .advantages__descriptions {
+  align-self: center;
   margin: 0;
   padding: 0;
   font-family: $default-font;
@@ -40,18 +85,14 @@
 
 @media (min-width: $tablet) {
   .advantages {
-    width: $tablet;
+    width: auto;
     margin-bottom: 50px;
-    padding-bottom: 55px;
+    padding-bottom: 37px;
     border-bottom: 1px solid #e6e6e6;
-
-    .container {
-      width: 708px;
-    }
   }
 
   .advantages__title {
-    margin-bottom: 63px;
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -60,12 +101,30 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .advantages__item {
-    width: 46%;
+    width: 45.8%;
     padding-left: 0;
-    margin-bottom: 62px;
+    margin-bottom: 68px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      background-position: 15px 15px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 112px;
+      font-family: $regular;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+      z-index: 0;
+    }
 
     &:last-child,
     &:nth-last-child(2) {
@@ -73,16 +132,43 @@
     }
   }
 
+  .advantages__item--nutritive {
+    &::after {
+      content: "1";
+      left: 117px;
+    }
+  }
+
+  .advantages__item--powder {
+    &::after {
+      content: "2";
+    }
+  }
+
+  .advantages__item--ingestion {
+    &::after {
+      content: "3";
+    }
+  }
+
+  .advantages__item--time {
+    &::after {
+      content: "4";
+    }
+  }
+
   .advantages__descriptions {
+    position: relative;
     width: 245px;
     margin: 0;
     padding: 0;
-    padding-top: 116px;
+    padding-top: 110px;
     padding-bottom: 67px;
     font-family: $default-font;
     font-size: 16px;
     line-height: 24px;
     color: $darkgray;
+    z-index: 1;
   }
 }
 
@@ -91,7 +177,7 @@
     width: $desktop;
     margin-bottom: 50px;
     padding-bottom: 55px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: none;
 
     .container {
       width: 1220px;
@@ -105,10 +191,10 @@
   }
 
   .advantages__descriptions {
-    width: 228px;
+    width: 245px;
     margin: 0;
     padding: 0;
-    padding-top: 116px;
+    padding-top: 110px;
     padding-bottom: 67px;
     font-family: $default-font;
     font-size: 16px;

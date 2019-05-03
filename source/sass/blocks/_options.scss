@@ -1,7 +1,7 @@
 .options {
-  width: $mobile;
+  width: auto;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .options__list {
@@ -10,23 +10,15 @@
 
 @media (min-width: $tablet) {
   .options {
-    width: $tablet;
-    margin-bottom: 54px;
-
-    .container {
-      width: 708px;
-    }
+    width: auto;
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop) {
   .options {
     width: $desktop;
-    margin-bottom: 70px;
-
-    .container {
-      width: 1220px;
-    }
+    margin-bottom: 72px;
   }
 
   .options__list {

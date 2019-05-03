@@ -1,14 +1,10 @@
 .table-price {
+  margin: 0;
+  padding: 0;
   border-collapse: collapse;
   width: 100%;
 }
 
 .table-price__value {
   text-align: right;
-}
-
-@media (min-width: $tablet) {
-  // .table-price {
-  //   width: 77%;
-  // }
 }

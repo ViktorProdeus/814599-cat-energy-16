@@ -1,5 +1,5 @@
 .food-programm {
-  width: $mobile;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   color: $white;
@@ -13,12 +13,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .food-programm__title {
   margin: 0;
-  margin-bottom: 28px;
-  padding-top: 28px;
+  margin-bottom: 25px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
   font-family: $regular;
@@ -39,7 +43,9 @@
 .food-programm__image {
   display: block;
   margin: 0 auto;
-  margin-top: -163px;
+  margin-top: -169px;
+  width: 280px;
+  height: 271px;
 }
 
 .food-programm__button {
@@ -52,7 +58,7 @@
 
 @media (min-width: $tablet) {
   .food-programm {
-    width: $tablet;
+    width: auto;
     text-align: left;
     color: $black;
     margin-bottom: 0;
@@ -71,7 +77,7 @@
     margin: 0;
     margin-bottom: 41px;
     padding-top: 0;
-    padding-left: 90px;
+    padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
     font-family: $regular;
@@ -79,7 +85,7 @@
   }
 
   .food-programm__slogan {
-    padding-left: 90px;
+    padding-left: 88px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
@@ -98,7 +104,7 @@
     display: inline-block;
     min-width: 245px;
     margin: 0;
-    margin-left: 90px;
+    margin-left: 88px;
     padding: 16px;
     font-size: 20px;
     line-height: 20px;
@@ -112,7 +118,7 @@
     text-align: left;
     color: $black;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
     min-height: 583px;
     position: relative;
     display: flex;
@@ -127,10 +133,10 @@
 
   .food-programm__title {
     margin: 0;
-    margin-top: 113px;
-    margin-bottom: 45px;
+    margin-top: 105px;
+    margin-bottom: 40px;
     padding-top: 0;
-    padding-left: 83px;
+    padding-left: 120px;
     font-size: 60px;
     line-height: 60px;
     font-family: $regular;
@@ -146,7 +152,7 @@
   }
 
   .food-programm__slogan {
-    padding-left: 80px;
+    padding-left: 120px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
@@ -166,8 +172,8 @@
     display: inline-block;
     min-width: 245px;
     margin: 0;
-    margin-left: 80px;
-    margin-top: 343px;
+    margin-left: 120px;
+    margin-top: 338px;
     padding: 16px;
     font-size: 20px;
     line-height: 20px;

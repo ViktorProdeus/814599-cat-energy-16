@@ -3,18 +3,63 @@
 }
 
 .diet-list__item {
-  padding: 24px 20px 22px 20px;
-  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  padding-top: 31px;
+  padding-bottom: 19px;
+  margin-bottom: 19px;
   background-color: $gray;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.diet-list__item--slim {
+  &::after {
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 0 0;
+  }
+}
+
+.diet-list__item--pro {
+  &::after {
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 0 0;
+  }
 }
 
 .diet-list__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 29px;
   padding: 0;
   padding-left: 70px;
   font-family: $regular;
@@ -28,29 +73,86 @@
 .diet-list__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 45px;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $darkgray;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .diet-list__link {
+  position: relative;
+  padding-right: 24px;
   font-family: $regular;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 0;
+    margin-right: -12px;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.diet-list__link:hover {
+  &::after {
+    margin-right: -21px;
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.diet-list__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {
   .diet-list__item {
-    padding: 80px 52px 62px;
+    padding: 77px 52px 59px;
     margin-bottom: 30px;
+
+    &::before {
+      top: 91px;
+      left: auto;
+      right: 61px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .diet-list__item--slim {
+    &::after {
+      top: 80px;
+      left: auto;
+      right: 91px;
+      width: 140px;
+      height: 194px;
+    }
+  }
+
+  .diet-list__item--pro {
+    &::after {
+      top: 134px;
+      left: auto;
+      right: 28px;
+      width: 268px;
+      height: 112px;
+    }
   }
 
   .diet-list__title {
-    margin-bottom: 17px;
+    margin-bottom: 23px;
     font-size: 36px;
     line-height: 37px;
     padding-left: 0;
@@ -58,17 +160,34 @@
   }
 
   .diet-list__description {
-    width: 372px;
+    min-width: 344px;
     margin: 0;
     padding: 0;
-    padding-bottom: 58px;
+    padding-right: 260px;
+    padding-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
+    border-bottom: none;
+  }
+
+  .diet-list__item--slim .diet-list__description {
+    min-width: 372px;
   }
 
   .diet-list__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 10px;
+      margin-right: -24px;
+    }
+  }
+
+  .diet-list__link:hover {
+    &::after {
+      margin-right: -33px;
+    }
   }
 }
 
@@ -76,9 +195,34 @@
   .diet-list__item {
     width: 570px;
     min-height: 372px;
-    padding: 47px 52px 62px;
+    padding: 49px 52px 60px;
     margin-bottom: 0;
     box-sizing: border-box;
+
+    &::before {
+      top: 45px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .diet-list__item--slim {
+    &::after {
+      top: 40px;
+      left: 66px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .diet-list__item--pro {
+    &::after {
+      top: 68px;
+      left: 35px;
+      width: 134px;
+      height: 56px;
+    }
   }
 
   .diet-list__title {
@@ -99,8 +243,7 @@
     line-height: 24px;
   }
 
-  .diet-list__link {
-    font-size: 20px;
-    line-height: 20px;
+  .diet-list__item--pro .diet-list__description {
+    width: 450px;
   }
 }

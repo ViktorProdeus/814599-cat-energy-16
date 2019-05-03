@@ -17,5 +17,10 @@ $medium: "Oswald Medium", $default-font, sans-serif;
 
 //Viewports
 $mobile: 320px;
+$mobile-only: 768px;
 $tablet: 768px;
 $desktop: 1300px;
+
+//Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
