@@ -12,8 +12,12 @@
   justify-content: center;
 }
 
-.card__image {
+.card__block-image picture {
   display: block;
+}
+
+.card__block-image a {
+  height: 144px;
 }
 
 .card__price-content {
@@ -71,19 +75,24 @@
 
   .card__block-image {
     margin: 0 auto;
-    margin-bottom: 37px;
+    margin-bottom: 33px;
     width: 100%;
     align-items: flex-end;
 
     &--small {
-      margin-top: -47px;
+      margin-top: -43px;
       height: 174px;
     }
 
     &--big {
-      margin-top: -81px;
+      margin-top: -77px;
       height: 208px;
     }
+  }
+
+  .card__block-image a {
+    flex-shrink: 0;
+    height: auto;
   }
 
   .card__price-content {

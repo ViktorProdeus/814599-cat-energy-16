@@ -7,10 +7,35 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Pixel Glass -->
+<style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/cat-energy-index-mobile.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/cat-energy-index-tablet.jpg" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 960px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/cat-energy-index-desktop.jpg" );
+      }
+    }
+  </style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body>
-
   <header class="page-header page-header--background">
     <div class="page-header__wrapper">
       <div class="page-header__top-line">
@@ -61,12 +86,6 @@
       </div>
       <div class="container">
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x"> -->
-
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
           <img class="food-programm__image food-programm__image--cup" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
