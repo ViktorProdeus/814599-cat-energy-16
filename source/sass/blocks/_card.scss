@@ -56,6 +56,10 @@
   color: $darkgray;
 }
 
+.card__wrapper-button {
+  width: 100%;
+}
+
 .card__button {
   width: 100%;
   padding: 10px;
@@ -70,7 +74,7 @@
   }
 
   .card__wrapper {
-    width: 76.8%;
+    width: auto;
   }
 
   .card__block-image {
@@ -96,8 +100,8 @@
   }
 
   .card__price-content {
-    width: 100%;
-    box-sizing: border-box;
+    width: 76.8%;
+    margin: 0 auto;
   }
 
   .card__price-title {
@@ -129,6 +133,11 @@
     color: $darkgray;
   }
 
+  .card__wrapper-button {
+    width: 76.8%;
+    margin: 0 auto;
+  }
+
   .card__button {
     margin-top: 35px;
     width: 100%;
@@ -136,7 +145,11 @@
 }
 
 @media (min-width: $desktop) {
-  .card__wrapper {
-    width: 170px;
+  .card__price-content {
+    width: 69%;
+  }
+
+  .card__wrapper-button {
+    width: 69%;
   }
 }

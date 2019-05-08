@@ -32,7 +32,6 @@
 .food-programm__slogan {
   display: block;
   margin: 0;
-  margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
@@ -40,10 +39,9 @@
   font-weight: normal;
 }
 
-.food-programm__image {
-  display: block;
+.food-programm__block-image {
   margin: 0 auto;
-  margin-top: -169px;
+  margin-top: -138px;
   width: 280px;
   height: 271px;
 }
@@ -54,11 +52,11 @@
   font-size: 14px;
   line-height: 18px;
   padding: 11px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet) {
   .food-programm {
-    width: auto;
     text-align: left;
     color: $black;
     margin-bottom: 0;
@@ -74,14 +72,11 @@
   }
 
   .food-programm__title {
-    margin: 0;
     margin-bottom: 41px;
     padding-top: 0;
     padding-left: 88px;
     font-size: 60px;
     line-height: 60px;
-    font-family: $regular;
-    font-weight: normal;
   }
 
   .food-programm__slogan {
@@ -91,7 +86,7 @@
     line-height: 20px;
   }
 
-  .food-programm__image {
+  .food-programm__block-image {
     margin-top: 0;
     width: 709px;
     height: 609px;
@@ -108,16 +103,12 @@
     padding: 16px;
     font-size: 20px;
     line-height: 20px;
-    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop) {
   .food-programm {
     width: $desktop;
-    text-align: left;
-    color: $black;
-    margin: 0 auto;
     margin-bottom: 77px;
     min-height: 583px;
     position: relative;
@@ -132,51 +123,32 @@
   }
 
   .food-programm__title {
-    margin: 0;
     margin-top: 105px;
     margin-bottom: 40px;
     padding-top: 0;
     padding-left: 120px;
     font-size: 60px;
     line-height: 60px;
-    font-family: $regular;
-    font-weight: normal;
   }
 
   .food-programm__bg-element {
     display: flex;
-
-    .container + .container {
-      position: relative;
-    }
   }
 
   .food-programm__slogan {
     padding-left: 120px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 20px;
   }
 
-  .food-programm__image {
-    margin-top: 29px;
-    margin-left: -43px;
+  .food-programm__block-image {
+    margin-top: 24px;
+    margin-left: -44px;
     width: 552px;
     height: 499px;
   }
 
   .food-programm__button {
-    position: absolute;
     top: 0;
-    left: 0;
-    display: inline-block;
-    min-width: 245px;
-    margin: 0;
     margin-left: 120px;
     margin-top: 338px;
-    padding: 16px;
-    font-size: 20px;
-    line-height: 20px;
-    box-sizing: border-box;
   }
 }
