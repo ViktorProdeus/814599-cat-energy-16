@@ -12,12 +12,12 @@ $default-bg: #ffffff;
 
 //Fonts
 $default-font: "Arial", sans-serif;
-$regular: "Oswald Regular", $default-font, sans-serif;
-$medium: "Oswald Medium", $default-font, sans-serif;
+$regular: "Oswald Regular", $default-font;
+$medium: "Oswald Medium", $default-font;
 
 //Viewports
 $mobile: 320px;
-$mobile-only: 768px;
+$mobile-only: 767px;
 $tablet: 768px;
 $desktop: 1300px;
 
