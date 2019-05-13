@@ -1,0 +1,108 @@
+.example {
+  background: $gray;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-top: 16px;
+  font-family: $regular;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__descriptions {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  width: 96%;
+  color: $darkgray;
+}
+
+.example__stats {
+  margin-bottom: 34px;
+}
+
+.example__food-costs {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__slider {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (min-width: $tablet) {
+  .example {
+    background: $white;
+  }
+
+  .example__title {
+    margin-bottom: 65px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__descriptions {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__column {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__stats {
+    margin-bottom: 0;
+  }
+
+  .example__food-costs {
+    margin: 0;
+    padding: 0;
+    font-family: $regular;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .example__food-costs span {
+    display: block;
+
+    &:first-child {
+      margin-top: 11px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .example__slider {
+    margin-top: 86px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__slider {
+    width: calc(50% + 80px);
+    margin-top: -190px;
+    margin-left: auto;
+    margin-right: -40px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
