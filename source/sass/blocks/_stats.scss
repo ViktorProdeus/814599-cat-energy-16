@@ -71,3 +71,9 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $desktop) {
+  .stats__item p {
+    background-color: $gray;
+  }
+}

@@ -37,8 +37,8 @@
 }
 
 .example__slider {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet) {
@@ -94,15 +94,49 @@
 }
 
 @media (min-width: $desktop) {
+  .example {
+    position: relative;
+  }
+
+  .example__title {
+    flex-grow: 1;
+    margin-bottom: 145px;
+    z-index: 2;
+  }
+
+  .example__descriptions {
+    width: 431px;
+    margin-bottom: 69px;
+    z-index: 2;
+  }
+
+  .example__column {
+    flex-wrap: wrap;
+    z-index: 2;
+  }
+
   .example__slider {
-    width: calc(50% + 80px);
-    margin-top: -190px;
+    margin-top: -55px;
     margin-left: auto;
-    margin-right: -40px;
+    margin-right: auto;
+    z-index: 1;
   }
 
   .example__wrapper {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .example__stats {
+    width: 366px;
+    margin-bottom: 48px;
+  }
+
+  .example__food-costs {
+    width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

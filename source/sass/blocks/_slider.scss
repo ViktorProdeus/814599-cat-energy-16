@@ -108,43 +108,13 @@
 }
 
 @media (min-width: $tablet) {
-  .slider__input--before:checked~.slider__control .slider__button {
-    left: 17px;
-  }
-
-  .slider__input--before:checked~.slider__items .slider__item--before {
-    width: 100%;
-  }
-
-  .slider__input--after:checked~.slider__control .slider__button {
-    left: calc(100% - 17px);
-  }
-
-  .slider__input--after:checked~.slider__items .slider__item--before {
-    width: 0;
-  }
-
-  .slider__input--before:focus~.slider__control .slider__label--before,
-  .slider__input--after:focus~.slider__control .slider__label--after {
-    border-bottom-style: solid;
-    border-color: rgba($black, 0.4);
-  }
-
   .slider {
-    width: 690px;
+    width: 100%;
     padding-bottom: 66px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 50%;
-      bottom: 0;
-      width: 100vw;
-      transform: translateX(-50%);
-      background-image: linear-gradient(to bottom, $white, $white 169px, $gray 169px, $gray);
-    }
+    background:
+      linear-gradient(white 0%, 26.8%, transparent 26.8%),
+      linear-gradient(90deg, $gray 0%, 50%, #eaeaea 50%);
   }
 
   .slider__label {
@@ -217,6 +187,7 @@
   }
 
   .slider__list {
+    width: 690px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 14px;
@@ -228,7 +199,7 @@
       top: 0;
       left: auto;
       bottom: 0;
-      width: 100vw;
+      width: 690px;
       background-image: linear-gradient(to bottom, $white, $white 169px, #eaeaea 169px, #eaeaea);
     }
   }
@@ -242,7 +213,7 @@
       top: 0;
       bottom: 0;
       z-index: 2;
-      width: 50%;
+      width: 345px;
       overflow: hidden;
       background-image: linear-gradient(to bottom, $white, $white 169px, $gray 169px, $gray);
     }
@@ -263,9 +234,14 @@
 
 @media (min-width: $desktop) {
   .slider {
-    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding-bottom: 67px;
-    background-color: transparent;
+    background:
+    linear-gradient(white 0%, 29.2%, transparent 29.2%),
+    linear-gradient(90deg, $gray 0%, 50%, #eaeaea 50%);
+    z-index: 0;
 
     &::before {
       display: none;
@@ -274,12 +250,11 @@
 
   .slider__list {
     width: 650px;
-    margin-left: auto;
+    margin-left: 48.6%;
     margin-right: auto;
     margin-bottom: 33px;
 
     &::after {
-      // problrm fon
       background-image: linear-gradient(to bottom, $white, $white 190px, #eaeaea 190px, #eaeaea);
     }
   }
@@ -291,6 +266,10 @@
   }
 
   .slider__img {
-    margin-left: -40px;
+    margin-left: -20px;
+  }
+
+  .slider__control {
+    margin-left: 650px;
   }
 }
