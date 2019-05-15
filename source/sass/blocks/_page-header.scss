@@ -14,7 +14,7 @@
   }
 }
 
-@media  (max-width: $mobile-only) {
+@media (max-width: $mobile-only) {
   .page-header__toggle {
     min-width: 24px;
     min-height: 18px;
@@ -93,7 +93,7 @@
     top: 0;
 
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-color:#65a93c;
+    background-color: #65a93c;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;

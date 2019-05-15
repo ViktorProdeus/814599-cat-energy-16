@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  @include list-reset
+  @include list-reset;
 }
 
 .stats__item {
