@@ -96,10 +96,12 @@
 @media (min-width: $desktop) {
   .example {
     position: relative;
+    min-height: 657px;
   }
 
   .example__title {
     flex-grow: 1;
+    padding-top: 61px;
     margin-bottom: 145px;
     z-index: 2;
   }
@@ -111,13 +113,12 @@
   }
 
   .example__column {
-    margin-bottom: 67px;
     flex-wrap: wrap;
     z-index: 2;
   }
 
   .example__slider {
-    margin-top: -55px;
+    top: -80px;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;

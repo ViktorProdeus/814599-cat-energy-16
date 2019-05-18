@@ -217,7 +217,12 @@
 
     </section>
 
-    <section class="contacts">
+
+
+  </main>
+
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contacts__wrapper">
         <div class="container">
@@ -237,16 +242,17 @@
 
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
-            <img class="contacts__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
               alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.344332868014!2d30.315864631864102!3d59.93650621163246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1558162120801!5m2!1sru!2sby"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-  </main>
-
-  <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo logo">
         <img class="logo__name" src="img/logo-footer.svg" alt="логотип">
@@ -258,8 +264,7 @@
             <a class="social__link social__link--vk" href="#" aria-label="ссылка на Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
 
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Вконтакте</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -269,8 +274,7 @@
             <a class="social__link social__link--insta" href="#" aria-label="ссылка на Инстаграмм">
               <span class="visually-hidden">Инстаграмм</span>
 
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Инстаграмм</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
@@ -279,9 +283,7 @@
           <li class="social__item">
             <a class="social__link social__link--fb" href="#" aria-label="ссылка на Фейсбук">
               <span class="visually-hidden">Фейсбук</span>
-
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Фейсбук</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
@@ -294,8 +296,7 @@
           aria-label="Переход на сайт в HTML Academy">
           <p class="copyright__text">HTML Academy</p>
 
-          <svg class="copyright__icon" aria-labelledby="heading">
-            <title id="heading">Иконка HTML Academy</title>
+          <svg class="copyright__icon">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>
