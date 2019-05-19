@@ -20,7 +20,10 @@
 @import "blocks/_social";
 @import "blocks/_copyright";
 
-// main blocks
+// autonomic blocks--catalog
+@import "blocks/_additional-products";
+
+  // main blocks
 @import "blocks/_page-header";
 @import "blocks/_page-main";
 @import "blocks/_page-inner";

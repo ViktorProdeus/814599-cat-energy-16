@@ -10,6 +10,16 @@
   font-weight: normal;
 }
 
+.page-inner {
+  .contacts {
+    background-color: $gray;
+  }
+
+  .contacts__info {
+    background-color: $gray;
+  }
+}
+
 @media (min-width: $tablet) {
   .page-inner__title {
     margin: 0;
@@ -27,5 +37,11 @@
 @media (min-width: $desktop) {
   .page-inner__title {
     margin-top: 71px;
+  }
+
+  .page-inner {
+    .contacts__info {
+      background-color: $white;
+    }
   }
 }
