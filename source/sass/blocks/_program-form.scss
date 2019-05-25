@@ -1,0 +1,279 @@
+.program-form {
+  margin-top: 40px;
+}
+
+.program-form__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: $regular;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-top: 5px;
+    height: 3px;
+    width: 70vw;
+    background-color: $green;
+  }
+}
+
+.program-form__title span {
+  position: relative;
+  margin-top: 30px;
+  background-color: $white;
+  width: 202px;
+  text-align: left;
+  z-index: 1;
+}
+
+.program-form__personal-info {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  border: none;
+}
+
+.program-form__options-info {
+  margin: 0;
+  padding: 20px 0;
+  border: 1px solid #ededed;
+}
+
+.program-form__contacts-info {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+
+  .program-form__title {
+    margin-bottom: 32px;
+  }
+}
+
+.program-form__comments-info {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  border: none;
+
+  .program-form__title {
+    margin-bottom: 33px;
+  }
+}
+
+.program-form__additional-info {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  border: none;
+
+  .program-form__title {
+    margin-bottom: 33px;
+  }
+}
+
+.program-form__wrapper-submit {
+  margin-bottom: 32px;
+}
+
+.program-form__wrapper-submit button {
+  border: none;
+  width: 100%;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.program-form__wrapper-submit p {
+  margin: 0;
+  margin-top: 21px;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: $darkgray;
+}
+
+@media (min-width: $tablet) {
+  .program-form {
+    margin-top: 65px;
+  }
+
+  .program-form__personal-info {
+    width: 89.5%;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .program-form__options-wrapper {
+    width: 82.5%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  .program-form__options-info {
+    padding: 25px 0;
+    margin-left: 3px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+
+    .container {
+      width: auto;
+      padding: 0 27px;
+    }
+  }
+
+  .program-form__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 39px;
+
+    &::after {
+      margin-top: 20px;
+      width: 100vw;
+    }
+  }
+
+  .program-form__title span {
+    position: relative;
+    margin-top: 30px;
+    background-color: $white;
+    width: 555px;
+    text-align: left;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -38px;
+      width: 38px;
+      height: 30px;
+      background-color: $white;
+      z-index: 1;
+    }
+  }
+
+  .program-form__contacts-info {
+    margin-bottom: 66px;
+
+    .program-form__title {
+      margin-bottom: 76px;
+    }
+  }
+
+  .program-form__comments-info {
+    margin: 0;
+    margin-bottom: 61px;
+    padding: 0;
+    border: none;
+
+    .program-form__title {
+      margin-bottom: 75px;
+    }
+  }
+
+  .program-form__additional-info {
+    margin-bottom: 54px;
+
+    .program-form__title {
+      margin-bottom: 57px;
+    }
+  }
+
+  .program-form__wrapper-submit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 76.2%;
+    margin-left: 40px;
+    margin-bottom: 71px;
+  }
+
+  .program-form__wrapper-submit button {
+    width: 52.4%;
+    min-height: 52px;
+    padding-left: 3px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program-form__wrapper-submit p {
+    width: 39.2%;
+    align-self: flex-start;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program-form__column-desktop {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .container {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  .program-form__personal-info {
+    width: 570px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .program-form__options-wrapper {
+    width: 570px;
+    margin: 0;
+  }
+
+  .program-form__options-info {
+    margin-left: 0;
+  }
+
+  .program-form__title {
+    margin-left: 0;
+  }
+
+  .program-form__contacts-info {
+    margin-bottom: 69px;
+  }
+
+  .program-form__comments-info {
+    margin-bottom: 62px;
+  }
+
+  .program-form__additional-info {
+    margin-bottom: 60px;
+  }
+
+  .program-form__wrapper-submit {
+    width: 895px;
+    margin-left: 0;
+    margin-bottom: 82px;
+  }
+
+  .program-form__wrapper-submit button {
+    width: 570px;
+    padding-left: 6px;
+  }
+
+  .program-form__wrapper-submit p {
+    width: 245px;
+    text-align: left;
+    margin-top: 16px;
+  }
+}

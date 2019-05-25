@@ -226,9 +226,6 @@
 
 @media (min-width: $desktop) {
   .slider {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
     padding-bottom: 69px;
     background:
       linear-gradient(white 190px, transparent 190px),
@@ -249,8 +246,8 @@
 
   .slider__item {
     &--before {
-    width: 365px;
-    background-image: linear-gradient($white 195px, $gray 195px);
+      width: 365px;
+      background-image: linear-gradient($white 195px, $gray 195px);
     }
   }
 

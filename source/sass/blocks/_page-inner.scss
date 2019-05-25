@@ -10,6 +10,22 @@
   font-weight: normal;
 }
 
+.page-inner__form {
+  .page-inner__title {
+    margin-bottom: 25px;
+  }
+}
+
+.page-inner__description {
+  margin: 0;
+  padding: 0;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
 .page-inner {
   .contacts {
     background-color: $gray;
@@ -22,15 +38,23 @@
 
 @media (min-width: $tablet) {
   .page-inner__title {
-    margin: 0;
-    padding: 0;
     margin-top: 55px;
     margin-bottom: 164px;
-    font-family: $regular;
     font-size: 60px;
     line-height: 60px;
-    color: $black;
-    font-weight: normal;
+  }
+
+  .page-inner__form {
+    .page-inner__title {
+      margin-bottom: 56px;
+    }
+  }
+
+  .page-inner__description {
+    margin-left: 39px;
+    width: 340px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -43,5 +67,9 @@
     .contacts__info {
       background-color: $white;
     }
+  }
+
+  .page-inner__description {
+    margin-left: 0;
   }
 }
