@@ -2,6 +2,12 @@
   margin-top: 40px;
 }
 
+.program-form h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
 .program-form__title {
   display: flex;
   align-items: center;
@@ -17,7 +23,7 @@
     right: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    margin-top: 5px;
+    margin-top: -10px;
     height: 3px;
     width: 70vw;
     background-color: $green;
@@ -26,7 +32,6 @@
 
 .program-form__title span {
   position: relative;
-  margin-top: 30px;
   background-color: $white;
   width: 202px;
   text-align: left;
@@ -47,8 +52,7 @@
 }
 
 .program-form__contacts-info {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 30px 0;
   padding: 0;
   border: none;
 
@@ -115,7 +119,7 @@
   .program-form__options-wrapper {
     width: 82.5%;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 74px;
   }
 
   .program-form__options-info {
@@ -136,14 +140,15 @@
     margin-left: 39px;
 
     &::after {
-      margin-top: 20px;
+      margin-top: 5px;
       width: 100vw;
     }
   }
 
   .program-form__title span {
+    display: block;
     position: relative;
-    margin-top: 30px;
+    // margin-top: 30px;
     background-color: $white;
     width: 555px;
     text-align: left;
@@ -166,6 +171,7 @@
 
     .program-form__title {
       margin-bottom: 76px;
+      margin-left: 38px;
     }
   }
 
@@ -177,6 +183,7 @@
 
     .program-form__title {
       margin-bottom: 75px;
+      margin-left: 38px;
     }
   }
 
@@ -184,7 +191,8 @@
     margin-bottom: 54px;
 
     .program-form__title {
-      margin-bottom: 57px;
+      margin-bottom: 55px;
+      margin-left: 38px;
     }
   }
 
@@ -216,10 +224,14 @@
 }
 
 @media (min-width: $desktop) {
+  .program-form .program-form__title {
+    margin-left: 0;
+  }
+
   .program-form__column-desktop {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-between;
 
@@ -244,12 +256,8 @@
     margin-left: 0;
   }
 
-  .program-form__title {
-    margin-left: 0;
-  }
-
   .program-form__contacts-info {
-    margin-bottom: 69px;
+    margin-bottom: 68px;
   }
 
   .program-form__comments-info {

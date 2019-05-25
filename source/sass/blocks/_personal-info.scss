@@ -78,6 +78,7 @@
 
     .personal-info__value {
       width: 89.5%;
+      height: inherit;
     }
   }
 
@@ -88,6 +89,7 @@
 
     .personal-info__value {
       width: 84.5%;
+      height: inherit;
     }
   }
 
@@ -98,13 +100,14 @@
 
     .personal-info__value {
       width: 78.5%;
+      height: inherit;
     }
   }
 }
 
 @media (min-width: $desktop) {
   .personal-info input {
-    padding: 9px 17px 11px;
+    padding: 10px 18px;
   }
 
   .personal-info__field-name {

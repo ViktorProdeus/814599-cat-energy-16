@@ -30,6 +30,7 @@
 
   .contacts-info__value {
     width: 78%;
+    height: inherit;
   }
 }
 
@@ -68,6 +69,7 @@
 
   .contacts-info__value {
     width: 72.5%;
+    height: inherit;
   }
 }
 
@@ -85,6 +87,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 22px;
+    height: 52px;
   }
 
   .contacts-info input {
@@ -107,12 +110,14 @@
   .contacts-info__field-email {
     .contacts-info__value {
       width: 87.2%;
+      height: inherit;
     }
   }
 
   .contacts-info__field-phone {
     .contacts-info__value {
       width: 84.5%;
+      height: inherit;
     }
   }
 
@@ -151,12 +156,14 @@
   .contacts-info__field-email {
     .contacts-info__value {
       width: 486px;
+      height: inherit;
     }
   }
 
   .contacts-info__field-phone {
     .contacts-info__value {
       width: 472px;
+      height: inherit;
     }
   }
 

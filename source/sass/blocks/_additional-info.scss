@@ -133,6 +133,12 @@
 }
 
 @media (min-width: $desktop) {
+  .additional-info {
+    .program-form__title::after {
+      margin-top: 7px;
+    }
+  }
+
   .additional-info__wrapper-field {
     margin-left: 0;
     width: 100%;
