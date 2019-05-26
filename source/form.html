@@ -50,7 +50,185 @@
     </div>
   </header>
 
+  <main class="page-inner__form">
+    <div class="container">
+      <h1 class="page-inner__title">Подбор программы</h1>
+
+      <p class="page-inner__description">
+        Заполните анкету и мы подберем программу&nbsp;питания для вашего кота
+      </p>
+    </div>
+    <form class="program-form" action="http://echo.htmlacademy.ru" method="post">
+      <div class="program-form__column-desktop">
+        <div class="container">
+          <fieldset class="program-form__personal-info personal-info">
+            <legend class="visually-hidden">Персональные данные</legend>
+
+            <p class="personal-info__field-name">
+              <label class="personal-info__title" for="name">Имя:*</label>
+              <input class="personal-info__value" type="text" id="name" name="Имя кота" placeholder="Барсик">
+            </p>
+
+            <p class="personal-info__field-weight">
+              <label class="personal-info__title" for="weight">Вес (кг):*</label>
+              <input class="personal-info__value" type="number" id="weight" name="Вес кота (кг)" placeholder="7">
+            </p>
+
+            <p class="personal-info__field-age">
+              <label class="personal-info__title" for="age">Возраст (лет):</label>
+              <input class="personal-info__value" type="number" id="age" name="Возраст кота (лет)" placeholder="7">
+            </p>
+          </fieldset>
+        </div>
+        <div class="program-form__options-wrapper">
+          <fieldset class="program-form__options-info options-info">
+            <legend class="visually-hidden">Выбор опции</legend>
+
+            <div class="container">
+              <p class="options-info__field-option">
+                <input class="visually-hidden options-info__radio" type="radio" id="slim" name="Выбор программы"
+                  value="Похудение" checked>
+                <label class="options-info__name" for="slim">Похудение</label>
+              </p>
+
+              <p class="options-info__field-option">
+                <input class="visually-hidden options-info__radio" type="radio" id="weight-gain" name="Выбор программы"
+                  value="Набор массы">
+                <label class="options-info__name" for="weight-gain">Набор массы</label>
+              </p>
+
+              <p class="options-info__field-option">
+                <input class="visually-hidden options-info__radio" type="radio" id="dont-know" name="Выбор программы"
+                  value="Не знаю (Нужен ваш совет)">
+                <label class="options-info__name" for="dont-know">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="container">
+        <fieldset class="program-form__contacts-info contacts-info">
+          <h3 class="program-form__title"><span>Контактные данные (владельца кота)</span></h3>
+
+          <div class="contacts-info__wrapper">
+            <p class="contacts-info__field-email">
+              <label class="contacts-info__name" for="email">E-mail:*</label>
+              <input class="contacts-info__value" type="email" id="email" name="адресс электронной почты"
+                placeholder="kuklachev@gmail.com" required>
+
+              <svg width="21" height="16" class="contacts-info__value-mail">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </p>
+
+            <p class="contacts-info__field-phone">
+              <label class="contacts-info__name" for="phone">Телефон:*</label>
+              <input class="contacts-info__value" type="tel" id="phone" name="номер телефона"
+                placeholder="8 (960) 900-60-90" required pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+
+              <svg width="20" height="20" class="contacts-info__value-phone">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="program-form__comments-info comments-info">
+          <h3 class="program-form__title"><span>Комментарий</span></h3>
+
+          <textarea class="comments-info__text" name="Комментарий"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="program-form__additional-info additional-info">
+          <h3 class="program-form__title additional-products__title-wrap"><span>Дополнительно</span></h3>
+
+          <div class="additional-info__wrapper-field">
+            <p class="additional-info__field">
+              <input class="visually-hidden additional-info__checkbox" type="checkbox" id="checkbox-sugar"
+                name="Дополнительный продукт" value="Сахарозаменитель" checked>
+
+              <svg width="21" height="16" class="additional-info__checkbox-icon">
+                <use xlink:href="img/sprite.svg#icon-tick"></use>
+              </svg>
+              <label class="additional-info__name" for="checkbox-sugar">Сахарозаменитель</label>
+            </p>
+
+            <p class="additional-info__field">
+              <input class="visually-hidden additional-info__checkbox" type="checkbox" id="checkbox-watter"
+                name="Дополнительный продукт" value="Питьевая вода">
+
+              <svg width="21" height="16" class="additional-info__checkbox-icon">
+                <use xlink:href="img/sprite.svg#icon-tick"></use>
+              </svg>
+              <label class="additional-info__name" for="checkbox-watter">Питьевая вода</label>
+            </p>
+
+            <p class="additional-info__field">
+              <input class="visually-hidden additional-info__checkbox" type="checkbox" id="checkbox-milk"
+                name="Дополнительный продукт" value="Молоко">
+
+              <svg width="21" height="16" class="additional-info__checkbox-icon">
+                <use xlink:href="img/sprite.svg#icon-tick"></use>
+              </svg>
+              <label class="additional-info__name" for="checkbox-milk">Молоко</label>
+            </p>
+
+            <p class="additional-info__field">
+              <input class="visually-hidden additional-info__checkbox" type="checkbox" id="checkbox-vitamin"
+                name="Дополнительный продукт" value="Витамины">
+
+              <svg width="21" height="16" class="additional-info__checkbox-icon">
+                <use xlink:href="img/sprite.svg#icon-tick"></use>
+              </svg>
+              <label class="additional-info__name" for="checkbox-vitamin">Витамины</label>
+            </p>
+          </div>
+        </fieldset>
+
+        <div class="program-form__wrapper-submit">
+          <button class="button button--green" type="submit">Отправить заявку</button>
+          <p>* — Обязательные поля</p>
+        </div>
+      </div>
+    </form>
+
+
+  </main>
+
   <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <div class="contacts__wrapper">
+        <div class="container">
+          <div class="contacts__info">
+            <b class="contacts__slogan">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+
+            <p class="contacts__location">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+              alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.344332868014!2d30.315864631864102!3d59.93650621163246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1558162120801!5m2!1sru!2sby"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
       <a href="index.html" class="page-footer__logo logo">
         <img class="logo__name" src="img/logo-footer.svg" alt="логотип">
@@ -62,8 +240,7 @@
             <a class="social__link social__link--vk" href="#" aria-label="ссылка на Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
 
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Вконтакте</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
@@ -73,8 +250,7 @@
             <a class="social__link social__link--insta" href="#" aria-label="ссылка на Инстаграмм">
               <span class="visually-hidden">Инстаграмм</span>
 
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Инстаграмм</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
@@ -83,9 +259,7 @@
           <li class="social__item">
             <a class="social__link social__link--fb" href="#" aria-label="ссылка на Фейсбук">
               <span class="visually-hidden">Фейсбук</span>
-
-              <svg aria-labelledby="heading">
-                <title id="heading">Иконка Фейсбук</title>
+              <svg>
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
@@ -94,11 +268,11 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт в HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Переход на сайт в HTML Academy">
           <p class="copyright__text">HTML Academy</p>
 
-          <svg class="copyright__icon" aria-labelledby="heading">
-            <title id="heading">Иконка HTML Academy</title>
+          <svg class="copyright__icon">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
         </a>

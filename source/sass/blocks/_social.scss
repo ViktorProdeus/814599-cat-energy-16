@@ -5,6 +5,8 @@
 
   @include list-reset;
   margin: 0 auto;
+  margin-left: 73px;
+  margin-top: 2px;
   width: 125px;
 }
 
@@ -48,6 +50,10 @@
 }
 
 @media (min-width: $tablet) {
+  .social__list {
+    margin-left: 18px;
+  }
+
   .social__link--vk svg {
     width: 30px;
     height: 16px;
