@@ -1,0 +1,91 @@
+.options-info__field-option {
+  position: relative;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-family: $regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.options-info__name {
+  margin-left: 45px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+.options-info__radio:checked ~ .options-info__name::before {
+  background-image: radial-gradient($green, $green 6px, transparent 7px, transparent 100%);
+}
+
+.options-info__radio:checked:hover ~ .options-info__name::before,
+.options-info__radio:hover ~ .options-info__name::before {
+  border-color: #bababa;
+  cursor: pointer;
+}
+
+.options-info__radio:active + .options-info__name,
+.options-info__radio:checked:active + .options-info__name,
+.options-info__radio:active + .options-info__name::before,
+.options-info__radio:checked:active + .options-info__name::before {
+  opacity: 0.3;
+}
+
+.options-info__radio:focus ~ .options-info__name,
+.options-info__radio:focus ~ .options-info__radio::before {
+  outline: 1px solid rgb(77, 144, 254);
+}
+
+@media (min-width: $tablet) {
+  .options-info__field-option {
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .options-info__name {
+    margin-left: 60px;
+    margin-bottom: 2px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 38px;
+      height: 38px;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+  }
+
+  .options-info__radio:checked ~ .options-info__name::before {
+    background-image: radial-gradient($green, $green 9px, transparent 10px, transparent 100%);
+  }
+}
+
+@media (min-width: $desktop) {
+  .options-info__name {
+    margin-bottom: 0;
+  }
+}

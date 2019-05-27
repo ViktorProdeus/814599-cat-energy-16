@@ -17,7 +17,7 @@
   .catalog__list {
     width: 92%;
     margin: 0 auto;
-    margin-bottom: 72px;
+    margin-bottom: 38px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@
 
   .catalog__list {
     width: 1220px;
-    margin-bottom: 80px;
+    margin-bottom: 46px;
   }
 
   .catalog__item {
@@ -55,7 +55,6 @@
     margin-bottom: 144px;
     padding-bottom: 40px;
     align-self: flex-start;
-
 
     &:nth-last-child(-n+4) {
       margin-bottom: 0;
