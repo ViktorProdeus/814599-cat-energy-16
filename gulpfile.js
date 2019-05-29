@@ -1,6 +1,8 @@
 "use strict";
 
 var gulp = require("gulp");
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -20,7 +22,9 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require("node-normalize-scss").includePaths
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -87,8 +91,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.ico",
+    "source/js/**/*min.js",
   ], {
     base: "source"
   })
@@ -99,10 +102,22 @@ gulp.task("clean", function () {
   return del("build")
 });
 
+gulp.task("compress", function () {
+  return pipeline(
+        gulp.src("source/**/toggle-menu*"),
+        uglify(),
+        rename({
+          extname: ".min.js"
+        }),
+        gulp.dest("build")
+  );
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "compress",
   "sprite",
   "html"
 ));
