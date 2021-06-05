@@ -1,0 +1,42 @@
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+}
+
+@media (max-width: $mobile-only) {
+  .main-nav {
+    display: none;
+  }
+
+  .main-nav--open {
+    display: block;
+  }
+
+  .main-nav--no-js {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 439px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 478px;
+  }
+}

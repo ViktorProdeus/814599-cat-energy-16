@@ -1,0 +1,90 @@
+.site-list__item {
+  border: 1px solid #e6e6e6;
+  border-top: none;
+}
+
+.site-list__link {
+  position: relative;
+  display: block;
+  padding: 23px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $medium;
+  color: $black;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .site-list__item {
+    border: none;
+    z-index: 1;
+  }
+
+  .site-list__link {
+    padding: 0;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: $regular;
+    color: #222222;
+  }
+
+  .site-list__item--active {
+    .site-list__link::after {
+      position: absolute;
+      content: "";
+      top: 32px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $green;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list__item {
+    border-bottom: none;
+    z-index: 1;
+  }
+
+  .site-list__link {
+    padding: 0;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: $regular;
+  }
+
+  .site-list__item--active {
+    .site-list__link::after {
+      position: absolute;
+      content: "";
+      top: 32px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $white;
+    }
+  }
+
+  .page-inner {
+    .site-list__link:not([href])::after {
+      position: absolute;
+      content: "";
+      top: 32px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $green;
+    }
+  }
+}
